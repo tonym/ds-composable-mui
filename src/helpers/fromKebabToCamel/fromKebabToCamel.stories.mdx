@@ -1,0 +1,55 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="Core/Helpers/fromKebabToCamel" />
+
+<h1>fromCamelToDash</h1>
+
+Converts camelCase to kebab-case.
+
+<h2>API</h2>
+
+<h3>Import</h3>
+
+Path import
+
+```javascript
+import fromKebabToCamel from '@uiproto/core/helpers/fromKebabToCamel';
+```
+
+Named import (use with Angular)
+
+```javascript
+import { fromKebabToCamel } from '@uiproto/core';
+```
+
+<h3>Signature</h3>
+
+```javascript
+fromKebabToCamel(value: string): string
+```
+
+<h3>Parameters</h3>
+
+<ul>
+  <li>
+    <strong>value</strong> : The string to format.
+  </li>
+</ul>
+
+<h3>Returns</h3>
+
+<ul>
+  <li>
+    <strong>string</strong>
+  </li>
+</ul>
+
+<h2>Examples</h2>
+
+<h3>Format a string:</h3>
+
+```javascript
+const formattedString = fromKebabToCamel('call-me-ishmael');
+
+console.log(formattedString); // callMeIshmael
+```
